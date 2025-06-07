@@ -1,10 +1,6 @@
-# OSX
+# === macOS ===
 .DS_Store
-
-# Thumbnails
 ._*
-
-# Files that might appear in the root of a volume
 .DocumentRevisions-V100
 .fseventsd
 .Spotlight-V100
@@ -12,7 +8,21 @@
 .Trashes
 .VolumeIcon.icns
 
-# Xcode
+# === Windows ===
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# === Xcode / iOS ===
 build/
 *.pbxuser
 !default.pbxuser
@@ -22,30 +32,143 @@ build/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata
+xcuserdata/
 *.xccheckout
 *.moved-aside
-DerivedData
+DerivedData/
 *.hmap
 *.ipa
 *.xcuserstate
 project.xcworkspace
+*.xcworkspace
+*.xcuserdata
+*.xcuserstate
 
-# Android/IJ
-.idea
-.gradle
+# === Android / IntelliJ ===
+.idea/
+.gradle/
 local.properties
-
-# node.js
-node_modules/
-npm-debug.log
-
-# BUCK
-buck-out/
-\.buckd/
-android/app/libs
+android/app/libs/
 android/keystores/debug.keystore
+android/app/build/
 
-# VSCode
+# === Node.js / React Native ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Metro bundler cache (React Native)
+/metro-cache/
+
+# Expo (React Native)
+.expo/
+.expo-shared/
+.expo-cache/
+
+# VS Code
 .vscode/
 .history/
+
+# BUCK build system
+buck-out/
+.buckd/
+
+# Python cache
+__pycache__/
+
+# Maven / Java / Spring Boot
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Eclipse
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+.settings/
+.loadpath
+.recommenders/
+.externalToolBuilders/
+*.launch
+*.pydevproject
+.cproject
+.autotools
+.factorypath
+.buildpath
+.target
+.tern-project
+.texlipse
+.springBeans/
+.sts4-cache/
+.cache-main/
+.scala_dependencies/
+.worksheet/
+
+# IntelliJ IDEA
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Java compiled files
+*.class
+
+# Logs
+*.log
+
+# Java packaging files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual machine crash logs
+hs_err_pid*
+
+# Backup files and conflict markers
+*.orig
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+# Other temporary files
+*.sw?
+.#*
+*#
+*~
+.sublime-*
+
+# Misc
+README.html
+.scratch
+.exercism
